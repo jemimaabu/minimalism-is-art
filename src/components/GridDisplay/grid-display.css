@@ -1,0 +1,7 @@
+.sample-component {
+    padding: 1em;
+    background-color: cornflowerblue;
+}
+.sample-component div {
+    border: 1px solid;
+}
