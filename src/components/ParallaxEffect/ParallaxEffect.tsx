@@ -12,15 +12,6 @@ const handleParallaxTextScroll = () => {
     parallaxText ? parallaxText.style.backgroundPosition = ('100% ' + -x / 1 + 'px' + ', 0%  0%, center top') : "";
 }
 
-const scrollToBottom = () => {
-    var x = window.scrollY;
-    var parallaxText = document.getElementsByClassName("parallax-text-container")[0];
-
-    if (x > (document.body.scrollHeight - (2* parallaxText.clientHeight))) {
-        window.scrollTo(0,document.body.scrollHeight);
-    }
-}
-
 window.onscroll = () => {
     handleParallaxTextScroll();
 };
