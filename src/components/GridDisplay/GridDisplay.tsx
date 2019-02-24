@@ -12,16 +12,12 @@ export class GridDisplay extends React.Component<GridDisplayProps, {}> {
             {
                 this.props.gridItems.map((gridItem,i) => {
                     return(
-                        <div key={i} className="grid-item">
+                        <div key={i} className={`grid-item${gridItem.length < 1 ? " empty" : ""}`}>
                             {
-                                gridItem.includes("images") && <img src={process.env.PUBLIC_URL + gridItem} key = {`0${i}`} alt="grid item" className="grid-image"/> 
-                            }
-                            {
-                                gridItem.includes("http") && <img src={gridItem} key={`0${i}`} alt="grid=item" className="grid-image"/>
+                                gridItem.includes("http") && <img src={gridItem} key={`0${i}`} alt="grid-item" className="grid-image"/>
                             }
                             {   
-                                !gridItem.includes("images") &&
-                                !gridItem.includes("http") &&
+                                gridItem.includes("http") ||
                                 <p key={`0${i}`} className="grid-text">{gridItem}</p>
                             }
                         </div>
