@@ -28,10 +28,10 @@ class App extends Component {
             "Art",
             "https://photo-cdn.icons8.com/assets/previews/361/03a57587-e0d2-4c8f-a363-1b46ba2a7ca41x.jpg",
             ]} />
-          <ParallaxEffect
-            parallaxBackgroundImage = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif"
-            parallaxText = "Minimalism Is Art"
-            parallaxTextBackground = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif" />
+        <ParallaxEffect
+          parallaxBackgroundImage = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif"
+          parallaxText = "Minimalism Is Art"
+          parallaxTextBackground = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif" />
         <footer>
           © <a href="http://www.jemimaabu.com" target="_blank">Jemima Abu</a>
         </footer>
