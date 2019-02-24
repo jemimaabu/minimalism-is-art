@@ -40,7 +40,7 @@ class App extends Component {
             parallaxTextBackground = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif" 
         />
         <footer>
-          © <a href="http://www.jemimaabu.com" target="_blank">Jemima Abu</a>
+          © <a href="http://www.jemimaabu.com" target="_blank" rel="noopener noreferrer">Jemima Abu</a>
         </footer>
       </div>
     );
