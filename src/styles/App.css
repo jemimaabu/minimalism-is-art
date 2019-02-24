@@ -1,23 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans+Condensed:300');
 @import '../components/GridDisplay/grid-display.css';
 @import '../components/ParallaxEffect/parallax-effect.css';
+@import './about.css';
+@import './contact.css';
 
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 .page-content {
   width: 85vw;
   margin: 0 auto;
   background-color: #eee;
 }
-.page-content header {
+.page-content main {
   padding: 5em;
   min-height: 10vh;
 }
-header h1 {
+main h1 {
   text-align: center;
   margin: 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 100;
 }
-
+.page-navigation {
+  display: flex;
+  padding: 1em 0;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.page-navigation li {
+  list-style-type: none;
+  padding: 0 1em;
+}
+.page-navigation li a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
 footer {
   position: absolute;
   font-family: 'Open Sans Condensed', sans-serif;
