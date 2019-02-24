@@ -1,7 +1,23 @@
-.sample-component {
-    padding: 1em;
-    background-color: cornflowerblue;
+.grid-display-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-.sample-component div {
-    border: 1px solid;
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 750px) {
+    .grid-display-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

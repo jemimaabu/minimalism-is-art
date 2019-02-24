@@ -1,18 +1,33 @@
 import * as React from 'react';
-import './grid-display.css';
 
-export interface SampleProps {
-    name: string;
+export interface GridDisplayProps {
+    /** Array of images or text to be displayed */
+    gridItems: Array<string>;
 }
 
-export interface SampleState {
-    name: string;
-}
-
-export class Sample extends React.Component<SampleProps, SampleState> {
+export class GridDisplay extends React.Component<GridDisplayProps, {}> {
     render() {
         return (
             <div className="grid-display-container">
+            {
+                this.props.gridItems.map((gridItem,i) => {
+                    return(
+                        <div key={i} className="grid-item">
+                            {
+                                gridItem.includes("images") && <img src={process.env.PUBLIC_URL + gridItem} key = {`0${i}`} alt="grid item" className="grid-image"/> 
+                            }
+                            {
+                                gridItem.includes("http") && <img src={gridItem} key={`0${i}`} alt="grid=item" className="grid-image"/>
+                            }
+                            {   
+                                !gridItem.includes("images") &&
+                                !gridItem.includes("http") &&
+                                <p key={`0${i}`} className="grid-text">{gridItem}</p>
+                            }
+                        </div>
+                    )
+                })
+            }
             </div>
         )
     }

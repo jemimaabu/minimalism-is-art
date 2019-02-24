@@ -1,0 +1,33 @@
+.parallax-effect-container {
+    position: relative;
+}
+
+.parallax-image {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-text-container {
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    font-size: 10em;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    word-break: break-word;
+}
