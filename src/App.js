@@ -29,7 +29,7 @@ class App extends Component {
             "https://photo-cdn.icons8.com/assets/previews/361/03a57587-e0d2-4c8f-a363-1b46ba2a7ca41x.jpg",
             ]} />
           <ParallaxEffect
-            parallaxBackgroundImage = "https://www.maxpixel.net/static/photo/1x/Simplicity-Detail-White-Minimalism-Art-94801.jpg"
+            parallaxBackgroundImage = "https://farm3.staticflickr.com/2857/9200887261_ea80f792e6_k.jpg"
             parallaxText = "Minimalism Is Art"
             parallaxTextBackground = "https://www.publicdomainpictures.net/pictures/240000/velka/the-woods-in-black-and-white.jpg" />
         <footer>

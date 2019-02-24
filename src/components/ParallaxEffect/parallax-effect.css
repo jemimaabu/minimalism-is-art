@@ -14,8 +14,7 @@
     background-color: white;
     height: 100vh;
     width: calc(100vw - 5px);
-    font-size: 10vmax;
-    font-weight: 700;
+    font-size: 9vmax;
     text-align: center;
     overflow: hidden;
     margin-left: -7.5vw;
@@ -32,4 +31,5 @@
     color: transparent;
     background-size: cover;
     word-break: break-word;
+    font-family: 'Nunito', sans-serif;
 }
