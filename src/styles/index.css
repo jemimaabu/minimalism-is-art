@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #001a1a;
+  background-color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -19,7 +19,7 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #001a1a; 
+  background: #000; 
 }
 
 ::-webkit-scrollbar-thumb {
