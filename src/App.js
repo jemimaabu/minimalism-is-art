@@ -31,7 +31,7 @@ class App extends Component {
           <ParallaxEffect
             parallaxBackgroundImage = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif"
             parallaxText = "Minimalism Is Art"
-            parallaxTextBackground = "https://www.publicdomainpictures.net/pictures/240000/velka/the-woods-in-black-and-white.jpg" />
+            parallaxTextBackground = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif" />
         <footer>
           Copyright <a href="http://www.jemimaabu.com">Jemima Abu</a> 2018
         </footer>
