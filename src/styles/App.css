@@ -63,10 +63,6 @@ main hr {
 .page-navigation li a:hover:after { 
   width: 100%; 
 }
-
-.page-navigation li a.active:after {
-  width: 100%;
-}
 footer {
   position: absolute;
   font-family: 'Open Sans Condensed', sans-serif;

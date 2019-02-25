@@ -7,22 +7,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { ParallaxEffect } from './components/ParallaxEffect/ParallaxEffect'
 
 class App extends Component {
-  authenticate(){
-    return new Promise(resolve => setTimeout(resolve, 2000))
-  }
-
-  componentDidMount(){
-    this.authenticate().then(() => {
-      const loader = document.getElementById('page-loader')
-      if(loader){
-        loader.classList.add('fade-out')
-        setTimeout(() => {
-          loader.outerHTML = ''
-        }, 2000)
-      }
-    })
-  }
-  
   render() {
     return (
       <div className="page-content">
@@ -35,13 +19,13 @@ class App extends Component {
             <div>
               <nav className="page-navigation">
                 <li>
-                  <Link to="/" className={window.location.pathname==="/" ? "active" : ""}>Gallery</Link>
+                  <Link to="/">Gallery</Link>
                 </li>
                 <li>
-                  <Link to="/about" className={window.location.pathname==="/about" ? "active" : ""}>About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/contact" className={window.location.pathname==="/contact" ? "active" : ""}>Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </nav>
               <div  className="page-content__body">
