@@ -7,13 +7,30 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { ParallaxEffect } from './components/ParallaxEffect/ParallaxEffect'
 
 class App extends Component {
+  authenticate(){
+    return new Promise(resolve => setTimeout(resolve, 2000))
+  }
+
+  componentDidMount(){
+    this.authenticate().then(() => {
+      const loader = document.getElementById('page-loader')
+      if(loader){
+        loader.classList.add('fade-out')
+        setTimeout(() => {
+          loader.outerHTML = ''
+        }, 2000)
+      }
+    })
+  }
+  
   render() {
-    console.log()
     return (
       <div className="page-content">
         <main>
-          <h1>Minimalism<br/>Is Art</h1>
-          <hr />
+          <header>
+            <h1>Minimalism<br/>Is Art</h1>
+            <hr />
+          </header>
           <Router>
             <div>
               <nav className="page-navigation">

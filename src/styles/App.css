@@ -3,6 +3,7 @@
 @import '../components/ParallaxEffect/parallax-effect.css';
 @import './about.css';
 @import './contact.css';
+@import './gallery.css';
 
 * {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -12,7 +13,6 @@
   opacity: 0;
   transform: translateY(1em);
 }
-
 .fade-in {
   animation: fade-in 1s linear normal forwards;
 }
@@ -81,4 +81,9 @@ footer a {
   color: inherit;
   text-decoration: none;
   letter-spacing: 0.1em;
+}
+@media(max-width: 750px) {
+  .page-content main {
+    padding: 2em;
+  }
 }
