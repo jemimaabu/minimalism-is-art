@@ -8,6 +8,7 @@ import { ParallaxEffect } from './components/ParallaxEffect/ParallaxEffect'
 
 class App extends Component {
   render() {
+    console.log()
     return (
       <div className="page-content">
         <main>
@@ -17,13 +18,13 @@ class App extends Component {
             <div>
               <nav className="page-navigation">
                 <li>
-                  <Link to="/">Gallery</Link>
+                  <Link to="/" className={window.location.pathname==="/" ? "active" : ""}>Gallery</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about" className={window.location.pathname==="/about" ? "active" : ""}>About</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact" className={window.location.pathname==="/contact" ? "active" : ""}>Contact</Link>
                 </li>
               </nav>
               <div  className="page-content__body">
@@ -40,7 +41,9 @@ class App extends Component {
             parallaxTextBackground = "https://66.media.tumblr.com/6d884fe09d90b1bac096df349d7b7b38/tumblr_orxj4oc6AH1uu9fqho1_500.gif" 
         />
         <footer>
-          © <a href="http://www.jemimaabu.com" target="_blank" rel="noopener noreferrer">Jemima Abu</a>
+         <p> © <a href="http://www.jemimaabu.com" target="_blank" rel="noopener noreferrer">Jemima Abu</a></p>
+         <p><a href="mailto:jemimaabu@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
+         <p><a href="https://twitter.com/jemimaabu" target="_blank" rel="noopener noreferrer">Twitter</a></p>
         </footer>
       </div>
     );

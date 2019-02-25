@@ -6,6 +6,15 @@
 
 * {
   font-family: 'Open Sans Condensed', sans-serif;
+  box-sizing: border-box;
+}
+.fade-out {
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.fade-in {
+  animation: fade-in 1s linear normal forwards;
 }
 .page-content {
   width: 85vw;
@@ -21,6 +30,9 @@ main h1 {
   margin: 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 100;
+}
+main hr {
+  margin: 1em 0 0;
 }
 .page-navigation {
   display: flex;
@@ -51,12 +63,19 @@ main h1 {
 .page-navigation li a:hover:after { 
   width: 100%; 
 }
+
+.page-navigation li a.active:after {
+  width: 100%;
+}
 footer {
   position: absolute;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 0.5em;
   font-size: 0.8em;
   text-transform: uppercase;
+  display: flex;
+  width: 85vw;
+  justify-content: space-evenly;
 }
 footer a {
   color: inherit;
