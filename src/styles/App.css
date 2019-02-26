@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
 @import '../components/GridDisplay/grid-display.css';
 @import '../components/ParallaxEffect/parallax-effect.css';
 @import './about.css';
@@ -6,8 +6,9 @@
 @import './gallery.css';
 
 * {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
+  color: #333;
 }
 .fade-out {
   opacity: 0;
@@ -20,6 +21,13 @@
   width: 85vw;
   margin: 0 auto;
   background-color: #eee;
+  transition: .3s;
+}
+.page-content.about {
+  background-color: #EABBBE;
+}
+.page-content.contact {
+  background-color: #c2a3db;
 }
 .page-content main {
   padding: 5em;
@@ -47,7 +55,7 @@ main hr {
 }
 .page-navigation li a {
   color: inherit;
-  font: inherit;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-decoration: none;
   position: relative;
 }
@@ -61,6 +69,9 @@ main hr {
   transition: .3s ease;
 }
 .page-navigation li a:hover:after { 
+  width: 100%; 
+}
+.page-navigation li a.active:after { 
   width: 100%; 
 }
 footer {

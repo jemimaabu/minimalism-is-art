@@ -1,12 +1,9 @@
 .about-page-container {
-    min-height: 100vh;
+    min-height: min-content;
 }
 
 .about-page-container a{
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid;
-}
-
-@media(max-width: 750px) {
 }
