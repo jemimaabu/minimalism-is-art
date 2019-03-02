@@ -12,35 +12,54 @@ const NoMatch = ({ location }) => (
   </div>
 );
 
+function handleFixedHeader() {
+  const header = document.getElementById("header");
+  const offsetTop = header.offsetTop;
+  var scroll = window.pageYOffset;
+  if (scroll >= offsetTop) {
+    header.className = "sticky";
+  }
+};
+
+window.onscroll = function() {
+  handleFixedHeader();
+};
+
+
 class App extends Component {
+  componentWillUnmount() {
+    window.removeEventListener('scroll', handleFixedHeader, false)
+  }
   render() {
     return (
       <div className="page-content">
         <main>
-          <header>
-            <h1>Minimalism<br/>Is Art</h1>
-            <hr />
-          </header>
           <BrowserRouter>
             <div>
-              <nav className="page-navigation">
-                <li>
-                  <NavLink to="/gallery">Gallery</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact">Contact</NavLink>
-                </li>
-              </nav>
-              <Switch>
-                <Route exact path="/" component={Gallery} />
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route component={NoMatch} />
-              </Switch>
+              <header id="header">
+                <h1>Minimalism Is Art</h1>
+                <hr />
+                <nav className="page-navigation">
+                  <li>
+                    <NavLink to="/gallery">Gallery</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about">About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/contact">Contact</NavLink>
+                  </li>
+                </nav>
+              </header>
+              <div id="page-body">
+                <Switch>
+                    <Route exact path="/" component={Gallery} />
+                    <Route path="/gallery" component={Gallery} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route component={NoMatch} />
+                </Switch>
+              </div>
             </div>
           </BrowserRouter>
         </main>

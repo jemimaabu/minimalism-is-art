@@ -33,14 +33,20 @@
   padding: 5em;
   min-height: 10vh;
 }
-main h1 {
+#header h1 {
   text-align: center;
   margin: 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 100;
 }
-main hr {
+#header hr {
   margin: 1em 0 0;
+}
+#header.sticky {
+  top: 0;
+  background-color: #eee;
+  position: sticky;
+  z-index: 2;
 }
 .page-navigation {
   display: flex;
