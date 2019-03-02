@@ -1,3 +1,54 @@
 .contact-page-container {
-    min-height: 100vh;
+    min-height: min-content;
+}
+
+.contact-form {
+    width: 75%;
+    margin: 1em auto 0;
+}
+
+.input-container + .input-container {
+    margin-top: 1em;
+}
+
+.input-container .input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.button {
+    padding: 1em 0 0;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    position: relative;
+    cursor: pointer;
+}
+.button:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid;
+  width: 0;
+  position: absolute;
+  left: 0;
+  transition: .3s ease;
+}
+.button:hover:after { 
+  width: 100%; 
+}
+
+textarea.input {
+    resize: none;
+    height: 10em;
+}
+
+@media(max-width: 750px) {
+    .contact-form {
+        width: 100%;
+    }
 }

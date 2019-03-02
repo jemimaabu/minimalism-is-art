@@ -51,7 +51,7 @@ class App extends Component {
         />
         <footer>
          <p> © <a href="http://www.jemimaabu.com" target="_blank" rel="noopener noreferrer">Jemima Abu</a></p>
-         <p><a href="mailto:jemimaabu@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p>
+         <p><a href="mailto:jemimaabu@gmail.com" rel="noopener noreferrer">Email</a></p>
          <p><a href="https://twitter.com/jemimaabu" target="_blank" rel="noopener noreferrer">Twitter</a></p>
         </footer>
       </div>
